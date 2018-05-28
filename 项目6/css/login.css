@@ -1,0 +1,77 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	color: #404040;
+}
+
+.login-form{
+	width: 400px;
+	border: solid 1px #909090;
+	margin: 10px auto;
+	padding: 20px;
+	overflow: hidden;
+}
+.mt{
+	
+	height: 40px;
+	overflow: hidden;
+}
+.mt h1{
+	float: left;
+}
+.regist-link{
+	float: right;
+	line-height: 40px;
+}
+.regist-link a,.regist-link a:visited{
+	font-size: 12px;
+	text-decoration: none;
+	color: red;
+}
+.regist-link a:hover,.regist-link a:focus{
+	text-decoration: underline;
+}
+.form{
+	width: 400px;
+	margin: 10px auto;
+}
+.item{
+	width: 390px;
+	height: 40px;
+	line-height: 40px;
+	border: solid 1px #909090;
+	margin: 10px 0;
+	padding-left: 10px;
+	background-color: #eee;
+	overflow: hidden;
+}
+
+.item input{
+	width: 330px;
+	height: 40px;
+	float: right;
+	padding-left: 10px;
+	border-left: solid 1px #909090;
+	border-right: none;
+	border-bottom: none;
+	border-top: none;
+	/*color: #d0d0d0;*/
+}
+form a,form a:visited{
+	display: block;
+	width: 400px;
+	height: 40px;
+	background-color: #D5077F;
+	border:solid 1px #BB0F73;
+	line-height: 40px;
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: bold;
+}
+form a:hover,form a:focus{
+	background-color: #ff077F;
+}

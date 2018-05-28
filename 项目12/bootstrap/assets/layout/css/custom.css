@@ -1,0 +1,122 @@
+.cate-tab-content{
+background: #FFF;
+padding: 20px 0px;
+}
+ 
+
+/* Catalogue styles */
+.product-item {
+	padding: 12px 12px 16px;
+	background: #fff;
+	position: relative;
+}
+.owl-item.active .product-item {
+	margin-right: 10px;
+}
+.product-item:hover {
+	box-shadow: 5px 5px rgba(234, 234, 234, 0.9);
+}
+.product-item:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+	font-size: 0;
+	line-height:0;
+}
+*html .product-item {
+	zoom: 1;
+}
+*+html .product-item {
+	zoom: 1;
+}
+.sticker {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 63px;
+	height: 63px;
+}
+.sticker-sale {
+	background: url(../../layout/img/sale.png) no-repeat;
+}
+.sticker-new {
+	background: url(../../layout/img/new.png) no-repeat;
+	left: auto;
+	right: 0;
+}
+.pi-img-wrapper {
+	position: relative;
+}
+.pi-img-wrapper div {
+	background: rgba(0,0,0,0.3);
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: none;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+.product-item:hover>.pi-img-wrapper>div {
+	display: block;
+}
+.pi-img-wrapper div .btn-default {
+	padding: 3px 10px;
+	color: #fff;
+	border: 1px #fff solid;
+	margin: -13px 5px 0;
+	background: transparent;
+	position: relative;
+	top: 50%;
+	font-size: 12px;
+}
+.product-item .btn:hover {
+	background: #e84d1c;
+	border-color: #c8c8c8;
+}
+
+.product-item h3 {
+	font: 300 14px 'Open Sans', sans-serif;
+	padding-top: 10px;
+	padding-bottom: 4px;
+}
+.product-item h3 a {
+	color: #3e4d5c;
+}
+.product-item h3 a:hover {
+	color: #E02222;
+}
+.pi-price {
+	color: #e84d1c;
+	font: 18px 'PT Sans Narrow', sans-serif;
+	float: left;
+	padding-top: 1px;
+}
+.product-item .add2cart {
+	float: right;
+	color: #a8aeb3;
+	border: 1px #ededed solid;
+	padding: 3px 6px;
+}
+.product-item .add2cart:hover {
+	color: #fff !important;
+	background: #E84D1C !important;
+	border-color: #E84D1C;
+}
+
+.shop-index-carousel {
+	margin-left: -10px;
+}
+
+.btn {
+	text-transform: uppercase;
+}
+
+.sale-product .owl-buttons {
+	top: -50px;
+}
+.langs-block-others{
+	padding: 0px;
+}

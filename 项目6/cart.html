@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>购物车</title>
+	<link rel="stylesheet" type="text/css" href="css/cart.css">
+</head>
+<body>
+<div class="cart">
+	<!-- 购物车标题栏 -->
+	<div class="cart-thead">
+		<div class="cart-checkbox">
+			<input type="checkbox" name="toggle-checkboxes"></input>
+			全选
+		</div>
+		<div class="cart-goods">商品</div>
+		<div class="cart-price">单价（元）</div>
+		<div class="cart-quantity">数量</div>
+		<div class="cart-sum">小计（元）</div>
+		<div class="cart-action">操作</div>
+	</div>
+	<!-- 购物车单个商品项 -->
+	<div class="item">
+		<div class="cart-checkbox">
+			<input type="checkbox" name="check-item"></input>
+			<img src="images/mm.png">
+		</div>
+		<div class="cart-goods">M&amp;M'S巧克力豆冰激凌</div>
+		<div class="cart-price">127.58</div>
+		<div class="cart-quantity"><a href="#">-</a><input type="text" value="1" autocomplete="off"><a href="#">+</a></div>
+		<div class="cart-sum">127.58</div>
+		<div class="cart-action"><a href="#">删除</a></div>
+	</div>
+	<!-- 购物车单个商品项 -->
+	<div class="item">
+		<div class="cart-checkbox">
+			<input type="checkbox" name="check-item"></input>
+			<img src="images/bjr.png">
+		</div>
+		<div class="cart-goods">M&amp;M'S巧克力豆冰激凌</div>
+		<div class="cart-price">127.58</div>
+		<div class="cart-quantity"><a href="#">-</a><input type="text" value="1" autocomplete="off"><a href="#">+</a></div>
+		<div class="cart-sum">127.58</div>
+		<div class="cart-action"><a href="#">删除</a></div>
+	</div>
+	<!-- 购物车结算栏 -->
+	<div class="cart-sbm">
+		<div class="btn">
+			<a href="#">去结算</a>
+		</div>
+		<div class="info">
+			已经<span>0</span>件选择商品&nbsp;&nbsp;总价：<span>￥0.00</span>
+		</div>
+		
+	</div>
+</div>
+</body>
+</html>

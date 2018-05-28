@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.SuperSlide.2.1.js"></script>
+	<title>芜湖职业技术学院</title>
+	
+	<script type="text/javascript">
+		$(function () {  
+	        $("#search").val("自主招生").addClass("waiting")  
+	        .blur(function () {  
+	            if ($(this).val() == "") {  
+	                $("#search").val("自主招生").addClass("waiting");  
+	            }  
+	        })  
+	        .focus(function () {  
+	            if ($("#search").val() == "自主招生") {  
+	                $("#search").val("").removeClass("waiting");  
+	            }  
+	        });  
+	    });  
+	</script>
+</head>
+<body>
+ 
+	<div id="top">
+		<div class="top-main">
+				<dl class="top-left fl">
+					<dd class="on"><h3><a target="_blank" href="#">网站首页</a></h3></dd>    
+					<dd><h3><a target="_blank" href="#">新闻中心</a></h3></dd>
+					<dd><h3><a target="_blank" href="#">数字校园</a></h3></dd>    
+					<dd><h3><a target="_blank" href="#">校园博客</a></h3></dd>
+					<dd><h3><a target="_blank" href="#">校务公开</a></h3></dd>    
+				</dl><!-- tnLeft E -->
+
+				<dl class="top-right fr">
+					<dd>
+						<h3><a target="_blank" href="#" class="wx">微信</a></h3>
+						<ul>
+							<li><img src="images/ewm.jpg" alt=""></li>
+						</ul>
+					</dd>
+					<dd>
+						<h3><a target="_blank" href="#" class="xl">新浪</a></h3>
+						<ul>
+							<li><img src="images/ewm.jpg" alt=""></li>
+						</ul>
+					</dd>
+					<dd>
+						<h3><a target="_blank" href="#" class="tx">腾讯</a></h3>
+						<ul>
+							<li><img src="images/ewm.jpg" alt=""></li>
+						</ul>
+					</dd>
+				</dl>
+		</div>
+		<script type="text/javascript">
+		jQuery(".top-right").slide({ 
+				type:"menu", //效果类型
+				titCell:"dd", // 鼠标触发对象
+				targetCell:"ul", // 效果对象，必须被titCell包含
+				delayTime:0, // 效果时间
+				defaultPlay:false,  //默认不执行
+				returnDefault:true // 返回默认
+		});
+	</script> 
+	</div>
+	<div class="container w950">
+		<div id="logo" class="w950">
+			 <div class="header-input" >
+				<form method="get">
+					<input type="text" name="search" id="search"  >
+					<button type="submit" name="search-btn" id="search-btn"><i class="icon-search icon-large"></i></button>
+				</form>
+			</div>
+		</div>
+		<div id="nav" class="w950">
+			<div class="navBar">
+				<ul class="nav clearfix">
+					<li id="m1" class="m">
+						<h3><a class="nav_index" target="_blank" href="#">首页</a></h3>
+					</li>
+					<li id="m5" class="m">
+						<h3><a  href="#">学校概况</a></h3>
+					</li>
+					<li id="m2" class="m">
+						<h3><a  href="#">机构设置</a></h3>
+						<div class="sub">
+							<dl>
+								 <dt><a href="#">党群机构</a></dt>
+								 <dd><a href="#">办公室</a></dd>
+								 <dd><a href="#">组织部</a></dd>
+								 <dd><a href="#">宣传部</a></dd>
+								 <dd><a href="#">监察处</a></dd>
+								 <dd><a href="#">工会</a></dd>
+								 <dd><a href="#">团委</a></dd>
+							</dl>
+							<dl>
+								<dt><a href="#">行政机构</a></dt>
+								<dd><a  href="http://www.whptu.ah.cn/site/jwc/">教务处</a></dd>
+								<dd><a  href="http://218.22.68.54:8888/Kycweb/Index.aspx">科研处</a></dd>
+								<dd><a  href="http://www.whptu.ah.cn/site/rlzyc/">人力资源处</a></dd>
+								<dd><a  href="http://www.whptu.ah.cn/site/cwc/">财务处</a></dd>
+								<dd><a  href="http://www.whptu.ah.cn/site/xsc/">学生处</a></dd>	 
+								<dd><a  href="http://www.whptu.ah.cn/site/zjc/">招生就业处</a></dd>
+								<dd><a  href="http://www.whptu.ah.cn/site/bwc/">保卫处</a></dd>	
+								<dd><a  href="http://www.whptu.ah.cn/site/zw/">总务处</a></dd> 
+								<dd><a  href="http://www.whptu.ah.cn/site/glpx/">干训中心</a></dd>
+								<dd><a  href="http://218.22.68.54:8888/sysxzx/">实验实训中心</a></dd>	
+								<dd><a  href="http://www.whptu.ah.cn/site/gjjlhz/">国际交流与合作处</a></dd>	 
+								<dd><a href="http://zjweb.11.53dns.net/">国有资产管理处</a></dd>
+							</dl>
+
+							<dl>
+								<dt><a href="#">教学机构</a></dt>
+								<dd><a target="_blank" target="_blank" href="http://www.whptu.ah.cn/site/qhx2/">材料工程学院</a></dd>
+								<dd><a target="_blank" target="_blank" href="http://www.whptu.ah.cn/site/dqx/">电气工程学院</a></dd>
+								<dd><a target="_blank" target="_blank" href="http://www.whptu.ah.cn/site/gggl/">公共管理学院</a></dd>
+								<dd><a href="http://www.whptu.ah.cn/site/gjjm/">国际经贸学院</a></dd>
+								<dd><a target="_blank" target="_blank" href="http://www.whptu.ah.cn/site/jxx/">机械工程学院</a></dd>
+								<dd><a target="_blank" target="_blank" href="http://www.whptu.ah.cn/site/jzgc/">建筑工程学院</a></dd>
+								<dd><a target="_blank" target="_blank" href="http://www.whptu.ah.cn/site/jgx/">经济管理学院</a></dd>
+								<dd><a target="_blank" target="_blank" href="http://www.whptu.ah.cn/site/qcgc/">汽车工程学院</a></dd>
+								<dd><a target="_blank" target="_blank" href="http://www.whptu.ah.cn/site/wyx/">人文旅游学院</a></dd>
+								<dd><a target="_blank" target="_blank" href="http://www.whptu.ah.cn/site/swx/">生物工程学院</a></dd>
+								
+									
+							</dl>
+
+							<dl>
+								<dt><a href="#">&nbsp;</a></dt>
+								<dd><a target="_blank" target="_blank" href="http://www.whptu.ah.cn/site/wlgc/">网络工程学院</a></dd>
+								<dd><a target="_blank" target="_blank" href="http://www.whptu.ah.cn/site/info/">信息工程学院</a></dd>
+								<dd><a target="_blank" target="_blank" href="http://www.whptu.ah.cn/site/yscmxy/">艺术传媒学院</a></dd>
+								<dd><a target="_blank" target="_blank" href="http://www.whptu.ah.cn/site/yywy/">应用外语学院</a></dd>
+								<dd><a target="_blank" target="_blank" href="http://www.whptu.ah.cn/site/yyx/">园林园艺学院</a></dd>
+								<dd><a target="_blank" target="_blank" href="http://www.whptu.ah.cn/site/jxjy/">继续教育学院</a></dd>
+								<dd><a target="_blank" target="_blank" href="http://www.whptu.ah.cn/site/jcb/">基础部</a></dd>
+								<dd><a target="_blank" target="_blank" href="http://www.whptu.ah.cn/site/szb/">思政部</a></dd>
+								<dd><a target="_blank" target="_blank" href="http://www.whptu.ah.cn/site/sports/">体育部</a></dd>
+							</dl>
+							<dl>
+								<dt><a href="#">教辅机构</a></dt>
+								<dd><a target="_blank" href="http://www.whptu.ah.cn/site/lib/">图书馆</a></dt>
+								<dd><a target="_blank" target="_blank" target="_blank" href="http://www.whptu.ah.cn/site/bjb/">学报编辑部</a></dt>
+								<dd><a target="_blank" target="_blank" target="_blank" href="http://www.useunion.com/">创业中心</a></dt>
+								<dd><a target="_blank" target="_blank" target="_blank" href="http://www.whptu.ah.cn/site/wsk/">卫生科</a></dt>
+								
+							</dl>
+							<dl>
+								<dt><a href="#">附属机构</a></dt>
+								<dd><a target="_blank" target="_blank" target="_blank" href="http://zj520.m54.53dns.net/">芜湖仪器仪表研究所</a></dt>
+								<dd><a target="_blank" target="_blank" target="_blank" href="http://www.whptu.ah.cn/site/fx/">附校</a></dt>
+							</dl>
+
+						</div>
+					</li>
+
+					<li id="m3" class="m">
+						<h3><a  href="#">师资队伍</a></h3>
+					</li>
+
+					<li id="m4" class="m">
+						<h3><a  href="#">招生就业</a></h3>
+					</li>
+
+					<li id="m5" class="m">
+						<h3><a  href="#">国际交流</a></h3>
+					</li>
+
+					<li id="m5" class="m">
+						<h3><a  href="#">继续教育</a></h3>
+					</li>
+
+					<li id="m5" class="m">
+						<h3><a  href="#">中职教育</a></h3>
+					</li>
+
+					<li id="m5" class="m">
+						<h3><a  href="#">学子风采</a></h3>
+					</li>
+				</ul>
+			</div>
+			<script type="text/javascript">
+				jQuery(".nav").slide({ 
+						type:"menu", //效果类型
+						titCell:".m", // 鼠标触发对象
+						targetCell:".sub", // 效果对象，必须被titCell包含
+						effect:"slideDown",//下拉效果
+						easing:"easeOutCubic",
+						delayTime:100, // 效果时间
+						triggerTime:0, //鼠标延迟触发时间
+						returnDefault:false, //返回默认状态
+						defaultIndex:10
+				});
+			</script> 
+
+		</div>
+		<div id="main" class="clearfix">
+			<div id="main-left" class="fl">
+				<div class="ajaxBox">
+					<div class="hd">
+						<ul>
+							<li class="tab_index"><a href="#">学院要闻</a></li>
+							<li><a href="#">视频新闻</a></li>
+							<li><a href="#">系部快讯</a></li>
+							<li><a href="#">职教动态</a></li>
+							<li><a href="#">媒体看学院</a></li>
+						</ul>
+					</div>
+					<div class="bd">
+						<div class="con" >
+							<div class="news clearfix">
+								<div class="news-left fl pt5">
+									<img src="images/player.jpg" alt="">
+								</div>
+								<div class="news-right fr">
+									<ul>
+										<li><a href="">澳大利亚塔斯马尼亚州教育部代表团...</a></li>
+										<li><a href="">安徽工程大学教学督导组来院指导工作</a></li>
+										<li><a href="">安徽财贸职业学院耿金岭院长一行考察我院大 </a></li>
+										<li><a href="">全国高职高专院校思想政治理论课微课教学比...</a></li>
+										<li><a href="">[党的群众路线教育实践活动]学院...</a></li>
+										<li><a href="">全国高职高专院校思想政治理论课微课教学...</a></li>
+										<li><a href="">全国高职高专院校思想政治理论课微课教学比...</a></li>
+										<li><a href="">澳大利亚塔斯马尼亚州教育部代表团...</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="con" >
+							<ul class="video-list">
+								<li class="a2">
+									<img width="230" height="190" src="images/4.jpg">
+									<a class="cover" href="#"><strong>澳大利亚塔斯马尼亚州教育</strong><br><br>查看详情</a>
+									<p><a href="">澳大利亚塔斯马尼亚州教育</a></p>
+								</li>
+								<li class="a5">
+									<img width="159" height="110" src="images/5.jpg">
+									<a class="cover" href="#"><strong>全国高职高专院校思想政治理论课微课教</strong><br><br>查看详情</a>
+								</li>
+								<li class="a6">
+									<img width="159" height="110" src="images/6.jpg">
+									<a class="cover" href="#"><strong>[党的群众路线教育实践活动]学</strong><br><br>查看详情</a>
+								</li>
+								<li class="a7">
+									<img width="159" height="110" src="images/6.jpg">
+									<a class="cover" href="#"><strong>安徽工程大学教学督导组来院指导工作</strong><br><br>查看详情</a>
+								</li>
+								<li class="a8">
+									<img width="159" height="110" src="images/5.jpg">
+									<a class="cover" href="#"><strong>[党的群众路线教育实践活动]学</strong><br><br>查看详情</a>
+								</li>
+							</ul>
+							<script type="text/javascript">
+								$(document).ready(function(){
+
+									$('.video-list li').each(function(){
+										
+										$(this).find('.cover').css('top', -$(this).height());
+										
+										$(this).hover(function(){
+											$(this).find('.cover').animate({
+												'top': '0'
+											},300);
+										},function(){
+											$(this).find('.cover').animate({
+												'top':$(this).height()
+											},{
+												duration: 300,
+												complete:function(){
+													$(this).css('top', -$(this).parent('li').height())
+												}
+											});
+										});
+										
+									});
+									
+								});
+								</script>
+						</div>
+						<div class="con" >
+							<div class="news clearfix">
+								<div class="news-left fl pt5">
+									<img src="images/player.jpg" alt="">
+								</div>
+								<div class="news-right fr">
+									<ul>
+										<li><a href="">澳大利亚塔斯马尼亚州教育部代表团...</a></li>
+										<li><a href="">安徽工程大学教学督导组来院指导工作</a></li>
+										<li><a href="">安徽财贸职业学院耿金岭院长一行考察我院大 </a></li>
+										<li><a href="">全国高职高专院校思想政治理论课微课教学比...</a></li>
+										<li><a href="">[党的群众路线教育实践活动]学院...</a></li>
+										<li><a href="">全国高职高专院校思想政治理论课微课教学...</a></li>
+										<li><a href="">全国高职高专院校思想政治理论课微课教学比...</a></li>
+										<li><a href="">澳大利亚塔斯马尼亚州教育部代表团...</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="con" >
+							<div class="news clearfix">
+								<div class="news-left fl pt5">
+									<img src="images/player.jpg" alt="">
+								</div>
+								<div class="news-right fr">
+									<ul>
+										<li><a href="">澳大利亚塔斯马尼亚州教育部代表团...</a></li>
+										<li><a href="">安徽工程大学教学督导组来院指导工作</a></li>
+										<li><a href="">安徽财贸职业学院耿金岭院长一行考察我院大 </a></li>
+										<li><a href="">全国高职高专院校思想政治理论课微课教学比...</a></li>
+										<li><a href="">[党的群众路线教育实践活动]学院...</a></li>
+										<li><a href="">全国高职高专院校思想政治理论课微课教学...</a></li>
+										<li><a href="">全国高职高专院校思想政治理论课微课教学比...</a></li>
+										<li><a href="">澳大利亚塔斯马尼亚州教育部代表团...</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="con" >
+							 
+									<ul class="video-list">
+										<li class="a2">
+											<img width="230" height="190" src="images/4.jpg">
+											<a class="cover" href="#"><strong>澳大利亚塔斯马尼亚州教育</strong><br><br>查看详情</a>
+											<p><a href="">澳大利亚塔斯马尼亚州教育</a></p>
+										</li>
+										<li class="a5">
+											<img width="159" height="110" src="images/5.jpg">
+											<a class="cover" href="#"><strong>全国高职高专院校思想政治理论课微课教</strong><br><br>查看详情</a>
+										</li>
+										<li class="a6">
+											<img width="159" height="110" src="images/6.jpg">
+											<a class="cover" href="#"><strong>[党的群众路线教育实践活动]学</strong><br><br>查看详情</a>
+										</li>
+										<li class="a7">
+											<img width="159" height="110" src="images/6.jpg">
+											<a class="cover" href="#"><strong>安徽工程大学教学督导组来院指导工作</strong><br><br>查看详情</a>
+										</li>
+										<li class="a8">
+											<img width="159" height="110" src="images/5.jpg">
+											<a class="cover" href="#"><strong>[党的群众路线教育实践活动]学</strong><br><br>查看详情</a>
+										</li>
+									</ul>
+							 
+						</div>
+					 
+					</div>
+				</div>
+				<script type="text/javascript">
+					jQuery(".ajaxBox").slide({});
+				</script>
+
+			</div>
+			<div id="main-right" class="fr">
+				<div class="box">
+					<div class="box-top">
+						<div class="box-top-area">
+							<h3>通知公告</h3>
+							<a href="" class='mores'>更多>></a>
+						</div>
+					</div>
+					<div class="box-center">
+						<div class="notice">
+							<ul>
+								<li><a href="" class="fl">澳大利教育部代表团...</a><span class="add-time fr">2014-10-18</span></li>
+								<li><a href="" class="fl">安徽工程组来院指导工作</a><span class="add-time fr">2014-10-18</span></li>
+								<li><a href="" class="fl">安徽财贸职业学行考察我院大 </a><span class="add-time fr">2014-10-18</span></li>
+								<li><a href="" class="fl">全国高职高专院校课微课教学比...</a><span class="add-time fr">2014-10-18</span></li>
+								<li><a href="" class="fl">[党的群活动]学院...</a><span class="add-time fr">2014-10-18</span></li>
+								<li><a href="" class="fl">全国高职高专微课教学...</a><span class="add-time fr">2014-10-18</span></li>
+								<li><a href="" class="fl">全国高理论课微课教学比...</a><span class="add-time fr">2014-10-18</span></li>
+								<li><a href="" class="fl">澳教育部代表团...</a><span class="add-time fr">2014-10-18</span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="cate-info" class="w960">
+			<!-- 图片滚动 S -->
+			<div class="picScroll">
+					<ul>
+						<li><a href="#"><img src="images/1.jpg" /></a></li>
+						<li><a href="#"><img src="images/2.jpg" /></a></li>
+						<li><a href="#"><img src="images/3.jpg" /></a></li>
+						<li><a href="#"><img src="images/1.jpg" /></a></li>
+						<li><a href="#"><img src="images/2.jpg" /></a></li>
+						<li><a href="#"><img src="images/3.jpg" /></a></li>
+						<li><a href="#"><img src="images/1.jpg" /></a></li>
+						<li><a href="#"><img src="images/2.jpg" /></a></li>
+						<li><a href="#"><img src="images/3.jpg" /></a></li>
+					</ul>
+					<a class="prev" style="display:none;"></a>
+					<a class="next" style="display:none;"></a>
+			</div>
+<script type="text/javascript">
+	$('.picScroll').hover(function(){
+		$('.prev,.next').show();
+	},function(){
+		$('.prev,.next').hide();
+	});
+	jQuery(".picScroll").slide({ 
+		mainCell:"ul",
+		autoPlay:true,
+		effect:"left", 
+		vis:3, 
+		scroll:1, 
+		autoPage:true, 
+		pnLoop:false 
+	});
+</script>
+			<!-- 图片滚动 E -->
+
+		</div>
+	<div id="footer">
+		<p>版权所有&copy;芜湖职业技术学院 COPYRIGHT&copy;WUHU ISTITUTE OF TECHNOLOGY 皖ICP备05000975号</p>
+		<p>北校区地址：安徽省芜湖市银湖北路62号  邮编：241006  南校区地址：安徽省芜湖市文津西路  邮编：241003</p>
+	</div>
+</body>
+</html>

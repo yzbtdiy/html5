@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>欢迎来到冰天美帝</title>
+	<link rel="stylesheet" type="text/css" href="css/ickbuy.css">
+	<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="js/jquery-1.11.2.js"></script>
+	<script type="text/javascript">
+		$(function () {  
+            $("#search").val("哈根达斯").addClass("waiting")  
+            .blur(function () {  
+                if ($(this).val() == "") {  
+                    $("#search").val("哈根达斯").addClass("waiting");  
+                }  
+            })  
+            .focus(function () {  
+                if ($("#search").val() == "哈根达斯") {  
+                    $("#search").val("").removeClass("waiting");  
+                }  
+            });  
+        });  
+	</script>
+<script type="text/javascript">
+		$(function(){
+			var $imgrolls = $(".banner div a");
+			$imgrolls.css("opacity","0.7");
+			var len =$imgrolls.length;
+			var index=0;
+			var adTimer=null;
+			$imgrolls.mouseover(function(){
+				index=$imgrolls.index(this);
+				showImg(index);
+			}).eq(0).mouseover();
+			//滑入 停止动画，滑出开始动画。
+			$('.banner').hover(function(){
+				if(adTimer){
+					clearInterval(adTimer);
+				}
+			},function(){
+				adTimer=setInterval(function(){
+					index++;
+					if(index==len){index=0;}
+					showImg(index);
+				},5000);
+			}).trigger("mouseleave");
+		})
+		//显示不同的幻灯片
+		function showImg(index){
+			var $rollobj=$(".banner");
+			var $rolllist=$rollobj.find("div a");
+			
+			var newhref=$rolllist.eq(index).attr("href");
+			$("#JS_imgWrap").attr("href",newhref).find("img").eq(index).stop(true,true).fadeIn().siblings().fadeOut();
+			$rolllist.removeClass("chos").css("opacity","0.7").eq(index).addClass("chos").css("opacity","1");
+		}
+	</script>
+	
+</head>
+<body>
+	<div class="container">
+		<!--首页头部-->
+		<div class="header-bg">
+			<div class="header center">
+				<div class="logo">
+					<img src="imgs/logo.png">
+				</div>
+				<div class="nav">
+					<ul>
+						<li><a href="#">首页</a></li>
+						<li><a href="#">新品速递</a></li>
+						<li><a href="#">热卖推荐</a></li>
+						<li><a href="#">商品分类</a>
+							<ul>
+								<li><a href="#">哈根达斯</a></li>
+								<li><a href="#">M&amp;M'S</a></li>
+								<li><a href="#">本杰瑞</a></li>
+								<li><a href="#">德芙</a></li>
+							</ul>			
+						</li>
+						<li><a href="#">品牌故事</a></li>
+						<li><a href="#">会员活动</a></li>					
+					</ul>
+				</div>
+				<div class="header-input" >
+					<form method="get">
+						<input type="text" name="search" id="search"  >
+						<button type="submit" name="search-btn" id="search-btn"><i class="icon-search icon-large"></i></button>
+					</form>
+					<div class="nav-cart">
+						<a href="#"><i class="icon-shopping-cart icon-2x"></i><span>&nbsp;购物车</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--首页banner-->		
+		<div class="banner center">
+			<a href="#" id="JS_imgWrap">
+				<img src="imgs/banner.png" alt="成为会员优惠更多">
+				<img src="imgs/banner2.png" alt="春季热销产品">
+			</a>
+			<div>
+				<a href="###1">
+				<em>成为会员</em><em>优惠更多</em>				
+			</a>
+			<a href="###2">
+				<em>春季热销</em><em>全场优惠</em>
+			</a>
+			</div>
+
+		</div>
+		
+		<!--首页主体-->
+		<div class="main center">
+			<div class="product-area">
+				<ul>
+					<li>
+						<div class="product-photo">
+							<a href="#">
+								<img src="imgs/mm.png">
+							</a>
+						</div>
+						<div class="product-info">
+							<div class="name">
+								<a href="#">M&amp;M'S巧克力豆冰激凌</a>
+							</div>
+							<div class="product-price-weight">
+								<span>￥68</span>
+								<span>/268g</span>
+							</div>
+						</div>
+						<div class="product-btn">
+							<a href="#">加入购物车</a>
+						</div>
+					</li>
+					<li>
+						<div class="product-photo">
+							<a href="#">
+								<img src="imgs/bjr.png">
+							</a>
+						</div>
+						<div class="product-info">
+							<div class="name">
+								<a href="#">本杰瑞草莓冰激凌</a>
+							</div>
+							<div class="product-price-weight">
+								<span>￥74</span>
+								<span>/420g</span>
+							</div>
+						</div>
+						<div class="product-btn">
+							<a href="#">加入购物车</a>
+						</div>
+					</li>
+					<li>
+						<div class="product-photo">
+							<a href="#">
+								<img src="imgs/mm.png">
+							</a>
+						</div>
+						<div class="product-info">
+							<div class="name">
+								<a href="#">M&amp;M'S巧克力豆冰激凌</a>
+							</div>
+							<div class="product-price-weight">
+								<span>￥68</span>
+								<span>/268g</span>
+							</div>
+						</div>
+						<div class="product-btn">
+							<a href="#">加入购物车</a>
+						</div>
+					</li>
+					<li>
+						<div class="product-photo">
+							<a href="#">
+								<img src="imgs/bjr.png">
+							</a>
+						</div>
+						<div class="product-info">
+							<div class="name">
+								<a href="#">本杰瑞草莓冰激凌</a>
+							</div>
+							<div class="product-price-weight">
+								<span>￥74</span>
+								<span>/420g</span>
+							</div>
+						</div>
+						<div class="product-btn">
+							<a href="#">加入购物车</a>
+						</div>
+					</li>
+					<li>
+						<div class="product-photo">
+							<a href="#">
+								<img src="imgs/mm.png">
+							</a>
+						</div>
+						<div class="product-info">
+							<div class="name">
+								<a href="#">M&amp;M'S巧克力豆冰激凌</a>
+							</div>
+							<div class="product-price-weight">
+								<span>￥68</span>
+								<span>/268g</span>
+							</div>
+						</div>
+						<div class="product-btn">
+							<a href="#">加入购物车</a>
+						</div>
+					</li>
+					<li>
+						<div class="product-photo">
+							<a href="#">
+								<img src="imgs/bjr.png">
+							</a>
+						</div>
+						<div class="product-info">
+							<div class="name">
+								<a href="#">本杰瑞草莓冰激凌</a>
+							</div>
+							<div class="product-price-weight">
+								<span>￥74</span>
+								<span>/420g</span>
+							</div>
+						</div>
+						<div class="product-btn">
+							<a href="#">加入购物车</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="ickbuy-ad-news">
+				<div class="ickbuy-more clear">
+					<a href="#">
+						<img src="imgs/ickbuy-more.png" alt="更多精选商品">
+						<span class="ickbuy-more-title">更多精选商品</span>
+					</a>
+				</div>
+				<div class="ickbuy-ad clear">
+					<a href="#">
+						<img src="imgs/ickbuy-ad.png" alt="顺丰快递到家">
+						<span class="ickbuy-ad-title">顺丰快递到家</span>
+					</a>
+				</div>
+				<div class="ickbuy-news clear">
+					<h3>冰天美帝新闻<span class="more"><a href="#">更多</a></span></h3>
+					<ul>
+						<li><a href="#">奇人~伊拉克画家既然这么用冰淇淋！</a></li>
+						<li><a href="#">冰淇淋有助怀孕</a></li>
+						<li><a href="#">英国鼓励市民吃冰激凌</a></li>
+						<li><a href="#">吃冰淇淋刺激大脑快乐区</a></li>
+						<li><a href="#">奇人~伊拉克画家既然这么用冰淇淋！</a></li>
+						<li><a href="#">冰淇淋有助怀孕</a></li>
+						<li><a href="#">英国鼓励市民吃冰激凌</a></li>
+						<li><a href="#">吃冰淇淋刺激大脑快乐区</a></li>
+					</ul>
+				</div>
+			</div>	
+		</div>
+	</div>
+	<!--首页尾部-->
+	<div class="footer">
+		<div class="copycontainer center">
+			<p>COPYRIGHT © 冰天美帝</p> <p>沪ICP备13018738号-1 食品流通许可证SP3101151210050229</p>
+		</div>
+	</div>
+	
+
+
+	
+	<!--
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	-->
+</body>
+</html>

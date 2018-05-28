@@ -1,0 +1,86 @@
+/* 禁用iPhone中Safari的字号自动调整 */
+/*html {
+	-webkit-text-size-adjust: none;
+}*/
+/* 设置HTML5元素为块 */
+/*article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}*/
+/* 设置图片视频等自适应调整 */
+/*img {
+	max-width: 100%;
+	height: auto;
+	width: auto\9; *//* ie8 */
+	/*}
+.video embed, .video object, .video iframe {
+	width: 100%;
+	height: auto;
+	}*/
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: "微软雅黑";
+	font-size: 14px;
+	color: #36332e;
+	background-color: #f4f4f4;
+}
+a,a:visited{
+	color: #36332e;
+	text-decoration: none;
+}
+a:hover{       
+		color:#BB0F73;                         
+}
+ .nav ul{
+ 	list-style-type: none;
+ }
+.nav {width: 100%; margin:0 auto; }
+
+
+ /* 当浏览器的可视区域小于650px */
+/*@media screen and (max-width: 650px) {
+     .nav {width: 100%; margin:0 auto;}
+
+}  */   
+     
+
+ /* 当浏览器的可视区域大于650px */
+@media screen and (min-width: 650px) {
+    /*.nav {width: 100%; margin:0 auto;}*/
+    .nav ul li {float: left;margin: 0 2em;}
+  /*  .nav ul li ul{
+	
+		
+		position: absolute;
+		left: -999em;
+	}
+	.nav ul li:hover ul{	
+		left: auto;
+
+		background-color:#4D4945;
+		z-index: 9999;
+	}
+	.nav ul li:hover ul li{
+		margin: 0;
+
+		float: none;
+		display: block;
+		width: 9.6em;
+		color: white;
+	}
+	.nav ul li:hover ul li a,.nav ul li:hover ul li a:visited{
+		
+		padding: 0.2em;
+		display: block;
+		
+		color: white;
+		
+	}
+	.nav ul li:hover ul li a:hover{
+		
+		background-color: #36332E
+	}*/
+
+ }

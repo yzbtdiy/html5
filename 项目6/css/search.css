@@ -1,0 +1,24 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.header-input{
+	width: 400px;
+	margin: 20px auto;
+	
+}
+#search{
+	width: 184px;
+	font-size: 12px;
+	padding: 6px 8px;
+	border: 1px solid #ccc;
+	
+}
+#search-btn{
+	background-color:#D5077F;
+	border: 1px solid #bb0f73;
+	width: 40px;
+	height: 28px;
+	color: #fff;
+	cursor: pointer; 
+}

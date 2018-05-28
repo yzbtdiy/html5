@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>列表样式</title>
+<style type="text/css">
+#listimg li {
+	
+}
+body {
+	margin: 50px;
+	font-size: 50px;
+}
+#listimg {
+	list-style-type: none;      /*先去掉默认项目符号*/
+}
+#listimg li {
+	background-image: url(img/5-4.png);  /*设置背景图片为该定制的符号*/
+	background-repeat: no-repeat; /*背景图片不重复*/
+	background-position: 0px center; /*背景图片的位置为X：0；Y:center*/
+	padding-left: 60px; /*左外边距控制列表缩进*/
+}
+</style>
+</head>
+
+<body>
+
+<ul id="listimg">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Water</li>
+  <li>Soda</li>
+</ul>
+
+
+</body>
+</html>

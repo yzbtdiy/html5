@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title> box-shadow</title>
+<style type="text/css">
+
+img{
+	-moz-box-shadow:3px 3px 6px #666; /* 老的 Firefox */
+	-webkit--moz-box-shadow:3px 3px 6px #666; /* 老的Safari */
+	box-shadow:3px 3px 6px #666 ;}
+#shadow_inset {
+	height: 300px;
+	width: 300px;
+	border: 2px solid #F00;
+	box-shadow:3px 3px 6px #666 inset;
+}
+</style>
+</head>
+
+<body>
+<img src="img/mm.png" width="258" height="258" />
+<p></p>
+<div id="shadow_inset"> </div>
+</body>
+</html>

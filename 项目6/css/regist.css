@@ -1,0 +1,68 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.regist{
+	width: 550px;
+	padding: 20px;
+	margin: 20px auto;
+	border: 1px solid #e0e0e0;
+}
+.item{
+	width: 450px;
+	margin: 10px 0;
+	overflow: hidden;
+}
+.item label{
+	width: 200px;
+	height: 36px;
+	line-height: 36px;
+	color: #606060;
+	text-align: right;
+	float: left;
+}
+.item input{
+	width: 240px;
+	height:36px;
+	float: left;
+}
+.lastitem{
+	width: 100px !important;
+}
+.item a,.item a:visited{
+	width: 100px;
+	height: 36px;
+	display: block;
+	line-height: 36px;
+	text-align: center;
+	font-size: 12px;
+	text-decoration: none;
+	color: #404040;
+	background-color: #efefef;
+	border: 1px solid #e0e0e0;
+	float: left;
+	margin-left: 10px;
+}
+.item a:hover{
+	text-decoration: underline;
+}
+.protocol{
+	margin: 15px 0 15px 200px;
+}
+.protocol,.protocol a,.protocol a:visited{
+	font-size: 12px;
+}
+.btn{
+	margin: 20px 0 30px 200px;
+	width: 180px;
+	height: 40px;
+	background-color: #D5077F;
+	font-size: 20px;
+	line-height: 40px;
+	text-align: center;
+}
+.btn a,.btn a:visited{
+	color: #fff;
+	display: block;
+	text-decoration: none;
+}

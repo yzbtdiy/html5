@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>M&amp;M'S巧克力豆冰激凌</title>
+	<link rel="stylesheet" type="text/css" href="css/ickbuy.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	
+	<script type="text/javascript" src="js/jquery-1.11.2.js"></script>
+	<script type="text/javascript" src="js/jquery.zoom.min.js"></script>
+	<script type="text/javascript">
+		// 搜索框关键词
+		$(function () {  
+		    $("#search").val("哈根达斯").addClass("waiting")  
+		    .blur(function () {  
+		        if ($(this).val() == "") {  
+		            $("#search").val("哈根达斯").addClass("waiting");  
+		        }  
+		    })  
+		    .focus(function () {  
+		        if ($("#search").val() == "哈根达斯") {  
+		            $("#search").val("").removeClass("waiting");  
+		        }  
+		    });  
+		 });  
+		// 切换选项卡
+		$(function(){
+			var $div_li=$("div.tab_menu ul li");
+			$div_li.click(function(){
+				$(this).addClass("selected").siblings().removeClass("selected");
+				var index = $div_li.index(this);
+				$("div.tab_box>div").eq(index).show().siblings().hide();
+			}).hover(function(){
+				$(this).addClass("hover");
+			},function(){
+				$(this).removeClass("hover");
+			});
+		})	;
+		// 放大镜效果
+		$(document).ready(function(){
+			$('#ex1').zoom();
+		});
+
+		//弹出窗口
+		$(function(){
+			
+			$(".goodsInfo .product-btn a").click(function(){
+				var pro_name = $(".goodsTitle").text();
+				var pro_price = $(".price").text();
+				var pro_weight = $(".weight").text();
+				var pro_num = $(".numinput").val();
+				var dialog = "感谢您的购买。\n您购买的\n"+
+							"产品是："+pro_name+";\n"+
+							pro_price+";\n"+
+							pro_weight+";\n"+
+							"数量是："+pro_num;
+				alert(dialog);
+				return false;
+			});
+		});
+	</script>
+	
+</head>
+<body>
+<div class="container">
+		<!--首页头部-->
+		<div class="header-bg">
+			<div class="header center">
+				<div class="logo">
+					<img src="imgs/logo.png">
+				</div>
+				<div class="nav">
+					<ul>
+						<li><a href="#">首页</a></li>
+						<li><a href="#">新品速递</a></li>
+						<li><a href="#">热卖推荐</a></li>
+						<li><a href="#">商品分类</a>
+							<ul>
+								<li><a href="#">哈根达斯</a></li>
+								<li><a href="#">M&amp;M'S</a></li>
+								<li><a href="#">本杰瑞</a></li>
+								<li><a href="#">德芙</a></li>
+							</ul>			
+						</li>
+						<li><a href="#">品牌故事</a></li>
+						<li><a href="#">会员活动</a></li>					
+					</ul>
+				</div>
+				<div class="header-input" >
+					<form method="get">
+						<input type="text" name="search" id="search"  >
+						<button type="submit" name="search-btn" id="search-btn"><i class="icon-search icon-large"></i></button>
+					</form>
+					<div class="nav-cart">
+						<a href="#"><i class="icon-shopping-cart icon-2x"></i><span>&nbsp;购物车</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--产品细节-->
+<div class="nav_goodsmap center">
+	<ul>
+		<li>当前位置&nbsp;/&nbsp;</li>
+		<li>首页&nbsp;/&nbsp;</li>
+		<li>商品分类&nbsp;/&nbsp;</li>
+		<li>M&amp;M'S&nbsp;/&nbsp;</li>
+		<li>M&amp;M'S巧克力豆冰激凌</li>
+	</ul>
+</div>
+<div class="goodsPrimary center">
+	<div class='zoom goodsImg' id='ex1'>
+		<img src="imgs/mm_big.png" width="450px" height="450px" alt="M&amp;M'S巧克力豆冰激凌">	
+	</div>
+
+	<div class="goodsInfo">
+		<p class="goodsTitle">M&amp;M'S巧克力豆冰激凌</p>
+		<p class="price">价格：127.58元</p>
+		<p class="weight">克数：500g</p>
+		<p class="number">选购数量：<input class="numinput" type="text" value="1" min="0" /></p>
+		<div class="product-btn">
+			<a href="#">购买</a>
+		</div>
+	</div>
+</div>
+
+<div class="tab center">
+	<div class="tab_menu">
+		<ul>
+			<li class="selected">商品展示</li>
+			<li>商品参数</li>
+			<li>品质保障</li>
+		</ul>
+	</div>
+	<div class="tab_box">
+		<div><img src="imgs/1.png"></div>
+		<div>
+			<p>产品参数：
+
+    </p>
+<p>厂名：美国    </p>
+<p>厂址：美国    </p>
+<p>厂家联系方式：123456789 </p>
+			<p>
+配料表：奶油、水、白砂糖、玉米糖浆、脱脂牛奶、蛋黄、椰子油、黄油、碳酸氢钠、食用盐
+    </p>
+			<p>储藏方法：零下20度储存
+    保质期：365 天
+    食</p>
+<p>品添加剂：瓜尔胶、卡拉胶、天然食用香料 </p>
+		    <p>
+包装方式: 散装
+    </p>
+		    <p>糕点种类: 冰淇淋    </p>
+		    <p>重量(g): 533    </p>
+		    <p>品牌: M＆M’S    </p>
+		    <p>系列: 两杯装    </p>
+		    <p>产地: 美国 </p>
+    </div>
+		<div><img src="imgs/2.jpg"></div>
+	</div>
+</div>
+</div>
+
+
+		<!--首页尾部-->
+		<div class="footer">
+			<div class="copycontainer center">
+				<p>COPYRIGHT © 冰天美帝</p> <p>沪ICP备13018738号-1 食品流通许可证SP3101151210050229</p>
+			</div>
+		</div>
+	</div>
+
+</div>
+</body>
+</html>

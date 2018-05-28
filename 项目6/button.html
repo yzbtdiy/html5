@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>鼠标按下时更换字体背景色，抬起时还原默认颜色。</title>
+    <style>
+      .class1{width:200px;height:120px;background:#abcdef;border:1px solid green;}
+    </style>
+    <script>
+        function downClick(){
+          var woaixuexi=document.getElementById("colorchange");
+         colorchange.style.background="red";
+        }
+       function upClick(){
+          var woaixuexi=document.getElementById("colorchange");
+          colorchange.style.background="#abcdef";
+        }
+    </script>
+  </head>
+  <body>
+    <div id="colorchange" onmousedown="downClick();" onmouseup="upClick();" class="class1"></div>
+  </body>
+</html>

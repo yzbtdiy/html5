@@ -1,0 +1,124 @@
+
+
+.rwd {
+	display:block;
+	position:relative;
+	width:100%;
+	padding:0px;
+	margin:0 auto !important;
+	text-align: center;
+	line-height:19px !important;
+}
+.rwd * {
+	-webkit-tap-highlight-color:transparent !important;
+	font-family:Arial;
+}
+.rwd a {
+	color:#ebebeb;
+	text-decoration:none;
+}
+.rwd .rwd-main-list, .rwd .rwd-main-list li {
+	margin:0px;
+	padding:0px;
+}
+.rwd ul {
+	display:block;
+	width:auto !important;
+	margin:0 auto !important;
+	overflow:hidden;
+	list-style:none;
+}
+
+
+/* sublevel menu - in construction */
+.rwd ul li ul, .rwd ul li ul li, .rwd ul li ul li a {
+	display:none !important;
+	height:0px !important;
+	width:0px !important;
+}
+/* */
+
+
+.rwd .rwd-main-list li {
+	display:inline;
+	padding:padding:0px;
+	margin:0px !important;
+}
+.rwd-toggled {
+	display:none;
+	width:100%;
+	position:relative;
+	overflow:hidden;
+	margin:0 auto !important;
+}
+.rwd-button:hover {
+	cursor:pointer;
+}
+.rwd .rwd-toggled ul {
+	display:none;
+	margin:0px !important;
+	padding:0px !important;
+}
+.rwd .rwd-toggled ul li {
+	display:block;
+	margin:0 auto !important;
+}
+
+
+/* MINIMAL STYLE */
+
+.rwd.minimal a {
+	color:#333333;
+}
+.rwd.minimal a:hover {
+	opacity:0.7;
+}
+.rwd.minimal .rwd-main-list li a {
+	display:inline-block;
+	padding:8px 30px 8px 30px;
+	margin:0px -3px 0px -3px;
+	font-size:15px;
+}
+.rwd.minimal .rwd-toggled {
+	width:95%;
+	min-height:36px;
+}
+.rwd.minimal .rwd-toggled-controls {
+	display:block;
+	height:36px;
+	color:#333333;
+	text-align:left;
+	position:relative;
+}
+.rwd.minimal .rwd-toggled-title {
+	position:relative;
+	top:9px;
+	left:9px;
+	font-size:16px;
+	color:#33333;
+}
+.rwd.minimal .rwd-button {
+	display:block;
+	position:absolute;
+	right:9px;
+	top:7px;
+}
+
+.rwd.minimal .rwd-button span {
+	display:block;
+	margin:4px 0px 4px 0px;
+	height:2px;
+	background:#333333;
+	width:25px;
+}
+.rwd.minimal .rwd-toggled ul li a {
+	display:block;
+	width:100%;
+	text-align:center;
+	padding:10px 0px 10px 0px;
+	border-bottom:1px solid #dedede;
+	color:#333333;
+}
+.rwd.minimal .rwd-toggled ul li:first-child a {
+	border-top:1px solid #dedede;
+}

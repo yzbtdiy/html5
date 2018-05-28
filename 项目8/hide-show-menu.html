@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>菜单的显示和隐藏</title>
+	<script type="text/javascript" src="js/jquery-1.11.2.js"></script>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		.listBox{
+			margin-top: 20px;
+			border: solid 1px #909090;
+			padding: 0.5em 2em;
+			margin-left: auto;
+			margin-right: auto;
+			width: 500px;
+			text-align: center;
+			overflow: hidden;
+		}
+		.listBox ul {
+			list-style-type: none;
+
+		}
+		.listBox ul li{
+			float: left;
+			width: 7em;
+			margin: 5px 20px;
+		}
+		.listBox a,.listBox a:visited{
+			color: #404040;
+			text-decoration: none;
+			display: block;
+		}
+		.showmore{
+			width: 8em;
+			line-height: 2em;
+			text-align: center;
+			
+			margin-top: 3em;
+			border:solid 1px #909090;
+			
+			clear: both;
+			
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.showmore a:hover{
+			background-color: #232323;
+			color: #fff;
+		}
+		
+	</style>
+	<script type="text/javascript">
+		
+		$(function(){
+			var $category = $("ul li:gt(5):not(:last)");
+
+			$category.hide();
+			var $toggleBtn = $("div.showmore>a");
+			$toggleBtn.click(function(){
+				if ($category.is(":visible")) {
+					$category.hide();
+					$(this).find("span").text("显示全部品牌");
+					
+				}
+				else{
+					$category.show();
+					$(this).find("span").text("精简显示品牌");
+
+				}
+				return false;
+			});
+		});
+
+	</script>
+
+</head>
+<body>
+	<div class="listBox">
+		<ul>
+			<li><a href="#">本杰瑞</a></li>
+			<li><a href="#">哈根达斯</a></li>
+			<li><a href="#">M&amp;M'S</a></li>
+			<li><a href="#">德芙</a></li>
+			<li><a href="#">水晶</a></li>
+			<li><a href="#">布里斯</a></li>
+			<li><a href="#">士力架</a></li>
+			<li><a href="#">德威仕</a></li>
+			<li><a href="#">蒙牛</a></li>
+			<li><a href="#">伊利</a></li>
+			<li><a href="#">雀巢</a></li>
+			<li><a href="#">DQ</a></li>
+			<li><a href="#">和路雪</a></li>
+			<li><a href="#">格林奥</a></li>
+			<li><a href="#">其他品牌冰激凌</a></li>
+		</ul>
+		<div class="showmore">
+			<a href="#"><span>显示全部品牌</span></a>
+		</div>
+	</div>	
+
+</body>
+</html>

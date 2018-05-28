@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>导航条</title>
+<style type="text/css">
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	padding:50px;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	color: #36332e;
+	/*background-color: #f4f4f4;*/
+}
+.nav ul {
+	list-style-type: none;
+}
+a,a:visited{
+	color: #36332e;
+	text-decoration: none;
+}
+.nav ul li {
+	line-height: 40px;
+	padding: 10px 20px;
+	float: left;
+	
+}
+.nav ul li a:hover{
+	padding-bottom: 6px;
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	border-bottom-color: #4D4945;
+}
+.nav ul li:hover ul li a:hover{
+	border-bottom:none;}
+
+.nav ul li ul{
+	
+	width: 10em;
+	position: absolute;
+	
+	left: -999em;
+}
+.nav ul li:hover ul li{
+	float:none;
+	padding:0  0.2em;
+	}
+	.nav ul li:hover ul li ,.nav ul li:hover ul li a{
+	display: block;
+	padding:0  0.2em;
+	line-height: 30px;
+	width: 9.6em;
+	color: #fff;
+	background-color: #4D4945;
+}
+.nav ul li:hover ul li a:hover{	
+	background-color: #404040;
+}
+
+.nav ul li:hover ul{	
+	left: auto;
+	z-index: 9999;
+
+}
+</style>
+</head>
+
+<body>
+<div class="nav">
+					<ul>
+						<li><a href="#">首页</a></li>
+						<li><a href="#">新品速递</a></li>
+						<li><a href="#">热卖推荐</a></li>
+						<li><a href="#">商品分类</a>
+							<ul>
+								<li><a href="#">哈根达斯</a></li>
+								<li><a href="#">M&amp;M'S</a></li>
+								<li><a href="#">本杰瑞</a></li>
+								<li><a href="#">德芙</a></li>
+							</ul>			
+						</li>
+						<li><a href="#">品牌故事</a></li>
+						<li><a href="#">会员活动</a></li>					
+					</ul>
+				</div>
+</body>
+</html>

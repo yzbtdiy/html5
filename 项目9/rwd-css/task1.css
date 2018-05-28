@@ -1,0 +1,49 @@
+img {
+
+　　max-width： 100%;
+
+　　height： auto;
+
+　　width： auto9; 
+
+　　}
+
+
+@media screen and (min-width: 1280px){
+	#content{
+	    width:1120px;
+	   
+	}
+	#image_container,img{
+		width: 1120px;
+		
+	}
+ 	
+	
+}
+
+@media screen and (max-width: 1280px){
+	#content{
+    width: 800px;
+	}
+	
+ 	#image_container,img{
+		width: 800px;
+		
+	}
+	
+
+}
+
+@media screen and (max-width: 650px){
+	#content{
+    width: 400px;
+	}
+	
+ 	#image_container,img{
+		width: 400px;
+		
+	}
+	
+
+}

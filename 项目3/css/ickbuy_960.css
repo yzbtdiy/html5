@@ -1,0 +1,16 @@
+.header{
+	height: 100px;
+	background-color: #999;
+}
+.main{
+	height: 400px;
+	background-color: red;
+}
+.sidebar{
+	height: 400px;
+	background-color:green;
+}
+.footer{
+	height: 50px;
+	background-color: #999;
+}

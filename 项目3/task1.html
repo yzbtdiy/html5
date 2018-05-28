@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>欢迎来到冰天美帝——布局练习</title>
+	<style type="text/css">
+body{
+	background-color: #eee;
+}
+.container{
+	background-color: white;
+	width: 1020px;
+	margin: 0 auto;
+}
+.header{
+	width: 1020px;
+	height: 100px;
+	background-color: #aaa;
+}
+.pagebody{
+	background-image: url(images/bg.png);
+	overflow: hidden;
+}
+.sidebar{
+	width: 200px;
+	height: 400px;
+	
+	background-repeat:repeat-y;
+
+
+	float: left;
+}
+.main{
+	width: 600px;
+	height: 400px;
+	
+	float: left;
+}
+.second{
+	width: 200px;
+	height: 400px;
+	
+	background-repeat:repeat-y;
+
+
+	float: right;
+}
+
+.footer{
+	width: 1020px;
+	height: 50px;
+	background-color: #aaa;
+}
+
+
+	</style>
+</head>
+<body>
+<div class="container">
+	<div class="header">这里是头部</div>
+	<div class="pagebody">
+		<div class="sidebar">这里是侧栏新闻列表</div>
+		<div class="main">这里是产品图片列表</div>
+		<div class="second">这里是副内容区域</div>
+	</div>
+	<div class="clear"></div>
+	<div class="footer">这里是底部</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>弹出框</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="js/jquery-1.11.2.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$(function () {
+	  	$('[data-toggle="popover"]').popover();
+})
+	</script>
+</head>
+<body>
+<button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Bootstrap" data-content="Bootstrap是由Twitter推出的Web前端框架。它是目前最受欢迎的 HTML、CSS 和 JS 框架，用于开发响应式布局、移动设备优先的 WEB 项目。它让前端开发更快速、简单，利用该框架开发者能快速上手、所有设备都可以适配、所有项目都能适用。">点我弹出/隐藏弹出框</button>
+
+</body>
+</html>

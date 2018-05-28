@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap标签</title>
+	<link rel="stylesheet" type="text/css" href="css/index-bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="js/jquery-1.11.2.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<ul class="nav nav-tabs" role="tablist" id="myTab">
+  <li role="presentation" class="active"><a href="#show" aria-controls="show" role="tab" data-toggle="tab">商品展示</a></li>
+  <li role="presentation"><a href="#detail" aria-controls="detail" role="tab" data-toggle="tab">商品参数</a></li>
+  <li role="presentation"><a href="#garantee" aria-controls="garantee" role="tab" data-toggle="tab">品质保障</a></li>
+</ul>
+
+<div class="tab-content">
+  <div role="tabpanel" class="tab-pane active" id="show"><img src="imgs/1.png"></div>
+  <div role="tabpanel" class="tab-pane" id="detail"><p>产品参数：
+
+    </p>
+<p>厂名：美国    </p>
+<p>厂址：美国    </p>
+<p>厂家联系方式：123456789 </p>
+			<p>
+配料表：奶油、水、白砂糖、玉米糖浆、脱脂牛奶、蛋黄、椰子油、黄油、碳酸氢钠、食用盐
+    </p>
+			<p>储藏方法：零下20度储存
+    保质期：365 天
+    食</p>
+<p>品添加剂：瓜尔胶、卡拉胶、天然食用香料 </p>
+		    <p>
+包装方式: 散装
+    </p>
+		    <p>糕点种类: 冰淇淋    </p>
+		    <p>重量(g): 533    </p>
+		    <p>品牌: M＆M’S    </p>
+		    <p>系列: 两杯装    </p>
+		    <p>产地: 美国 </p></div>
+  <div role="tabpanel" class="tab-pane" id="garantee"><img src="imgs/2.jpg"></div>
+</div>
+
+<script>
+  $(function () {
+    $('#myTab a:first').tab('show')
+  })
+</script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+a,a:visited{
+	color: #36332e;
+	text-decoration: none;
+}
+a:hover,a:focus{       
+		color:#BB0F73;                         
+}
+
+.center{
+	margin: 0 auto;
+}
+.container{
+	width: 100%;
+	
+}
+
+.header-bg{
+		background-color: #ffffff;
+		width: 100%;
+			
+}
+.header{
+	width: 1200px;
+}
+.main,.banner{
+		width: 1160px;
+		overflow: hidden;
+		
+}
+.product-area{
+		width: 894px;
+		float: left;
+		
+}
+.ickbuy-ad-news{
+		width: 260px;
+		float: right;
+}
+.footer{
+		width: 100%;
+		margin-top: 20px;
+		background-color: #c4c4c4;
+}
+.copycontainer{
+	width: 1200px;
+}
+
+.nav ul  li a:hover,.nav ul li a:focus{
+	color: #36332e;	
+}
+h3 > span{
+	float: right;
+	font-size: 0.8em;
+	
+}
+
+.product-btn{
+	width: 258px;
+	height: 40px;
+	margin: 10px;
+	text-align: center;
+	line-height: 40px;
+	background-color: #333333;
+
+}
+.product-btn a,.product-btn a:visited{
+	/*background-color: #333333;*/
+	/*width: 258px;*/
+	/*height: 40px;
+	text-align: center;
+	line-height: 40px;*/
+	color: #ffffff;
+	display: block;
+}
+.product-btn a:hover,.product-btn a:focus{
+	background-color: #444444;
+}

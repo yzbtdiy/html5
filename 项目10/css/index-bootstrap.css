@@ -1,0 +1,90 @@
+
+a,a:visited{
+	color: #36332e !important;
+	text-decoration: none;
+}
+a:hover{       
+	color:#BB0F73;                         
+}
+body{
+	font-family: "微软雅黑";
+	font-size: 14px;
+	color: #36332e;
+	background-color: #f4f4f4 !important;
+}
+
+.header{
+	width: 100%;
+	padding: 20px 0;
+	background-color: #fff;
+	border-bottom-style: solid;
+	border-top-width: 2px;
+	border-bottom-color:#c4c4c4;
+}
+.navbar-form button,.navbar-form button a,.navbar-form button a:visited,.navbar-form button a:hover{
+	background-color: #D5077F !important;
+	border-color: #BB0F73 !important;
+}
+
+.pagebody{
+	padding-top: 20px;
+}
+.pagebody ul li{
+	padding: 5px;
+	margin: 5px;
+	background-color: #fff;
+}
+.pagebody ul li button{
+	margin: 10px 0;
+}
+.ickbuy-more{
+	margin: 10px 0 15px 0;
+	height: 80px;
+	width: 100%;
+	overflow: hidden;
+}
+.ickbuy-ad{
+	height: 258px;
+	width: 100%;
+	overflow: hidden;
+}
+.ickbuy-more-title{
+	color: #fff;
+	position: absolute;
+	font-size: 20px;
+	left: 20px;
+	top:20px;
+	font-weight: bolder;
+	text-shadow:1px 2px 3px rgba(0,0,0,0.5);
+}
+.ickbuy-ad-title{
+	position: absolute;
+	left: 20px;
+	top: 20px;
+	font-size: 18px;
+	font-weight: bolder;
+
+	/*text-shadow:1px 2px 3px rgba(0,0,0,0.2);*/
+}
+
+.ickbuy-news ul li {
+	margin: 0;
+	padding: 2px 0;
+	background-color: #f4f4f4 !important;
+}
+.ickbuy-news h3{
+
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	border-bottom-color: #c4c4c4;
+	padding-bottom: 5px;
+	width: 100%;
+}
+.footer{
+	margin-top: 15px;
+	padding-top:15px;
+	padding-bottom: 15px;
+	background-color: #c4c4c4;
+	color: #36332E;
+	line-height: 15px;
+}

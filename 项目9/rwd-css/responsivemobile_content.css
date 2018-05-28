@@ -1,0 +1,376 @@
+/* 禁用iPhone中Safari的字号自动调整 */
+
+　　html {
+
+　　-webkit-text-size-adjust： none;
+
+　　}
+
+　　/* 设置HTML5元素为块 */
+
+　　article， aside， details， figcaption， figure， footer， header， hgroup， menu， nav， section {
+
+　　display： block;
+
+　　}
+
+　　/* 设置图片视频等自适应调整 */
+
+　　img {
+
+　　max-width： 100%;
+
+　　height： auto;
+
+　　width： auto9; /* ie8 */
+
+　　}
+
+　　.video embed， .video object， .video iframe {
+
+　　width： 100%;
+
+　　height： auto;
+
+　　}
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.clear{
+	clear: both;
+}
+body{
+	font-family: "微软雅黑";
+	font-size: 14px;
+	color: #36332e;
+	background-color: #f4f4f4;
+}
+a,a:visited{
+	color: #36332e;
+	text-decoration: none;
+}
+a:hover{       
+		color:#BB0F73;                         
+}
+.center{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.container{
+	width: 100%;
+	margin: 0 auto;
+	
+}
+.banner div{
+	bottom: 0;
+	overflow: hidden;
+	position: absolute;
+	float: left;
+}
+.banner div a{
+	background-color: #666;
+	color: #fff;
+	display: inline-block;
+	float: left;
+	height: 32px;
+	margin-right: 1px;
+	overflow: hidden;
+	padding: 5px 15px;
+	text-align: center;
+	width: 79px;
+}
+.banner div a em{
+	cursor: pointer;
+	display: block;
+	height: 16px;
+	overflow: hidden;
+	width: 79px;
+}
+.banner a.chos{
+	background-color: #000000;
+	color: #fff;
+}
+.product-area{
+	width: 894px;
+	float: left;
+}
+.product-area ul{
+	list-style-type: none;
+}
+.product-area ul li{
+	float: left;
+	background-color: #ffffff;
+	width: 278px;
+	margin:20px 20px 0px 0px;
+}
+
+.product-photo,.product-info,.product-btn{
+	width: 258px;
+	margin: 10px;
+	overflow: hidden;
+	
+}
+.product-photo {
+	height: 258px;
+
+}
+img{
+	border:none;
+}
+.product-price-weight{
+	font-size: 12px;
+}
+/*.product-btn{
+	height: 40px;
+	background-color: #333333;
+}*/
+.product-btn a{
+	background-color: #333333;
+	width: 258px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	color: #ffffff;
+	display: block;
+}
+.product-btn a:hover{
+	background-color: #444444;
+}
+.ickbuy-ad-news{
+	width: 260px;
+	float: right;
+
+}
+.ickbuy-more,.ickbuy-ad{
+	width: 258px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: solid 1px #d1d1d1;
+	overflow: hidden;
+	position: relative;
+}
+.ickbuy-more{
+	height: 80px;
+}
+.ickbuy-ad{
+	height: 258px;
+	
+}
+.ickbuy-more-title{
+	color: #fff;
+	position: absolute;
+	font-size: 20px;
+	left: 20px;
+	top:20px;
+	font-weight: bolder;
+	text-shadow:1px 2px 3px rgba(0,0,0,0.5);
+}
+.ickbuy-ad-title{
+	position: absolute;
+	left: 20px;
+	top: 20px;
+	font-size: 18px;
+	font-weight: bolder;
+	/*text-shadow:1px 2px 3px rgba(0,0,0,0.2);*/
+
+	
+}
+.ickbuy-ad-title:after,.ickbuy-more-title:after{
+	content:"\00bb";
+	margin-left: 5px;
+}
+.ickbuy-news h3{
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	border-bottom-color: #c4c4c4;
+	padding-bottom: 5px;
+}
+.more a{
+	float: right;
+	font-size: 12px;
+	line-height: 24px;
+}
+.ickbuy-news ul{
+	list-style-type: none;
+	margin: 10px 0px 10px 0px;
+}
+.ickbuy-news ul li{
+	line-height: 28px;
+}
+
+.footer{
+	width: 100%;
+	margin-top: 20px;
+	background-color: #c4c4c4;
+}
+.copycontainer{
+	padding: 30px 0px;
+	width: 1200px;
+}
+.copycontainer p{
+	font-size: 12px;
+	color: #444;
+}
+
+/*detail_product_mm*/
+.nav_goodsmap{
+	width: 1160px;
+	padding: 20px 0px;
+	overflow: hidden;
+}
+.nav_goodsmap ul{
+	list-style-type: none;
+}
+.nav_goodsmap ul li{
+	float: left;
+	color: #909090;
+}
+.goodsPrimary{
+	width: 1160px;
+	overflow: hidden;
+}
+.goodsImg{
+	float: left;
+	clear: left;
+}
+.goodsInfo{
+	width: 480px;
+	float: right;
+	clear: right;
+}
+.goodsTitle{
+	font-weight: bold;
+	font-size: 20px;
+	padding: 10px 0px;
+}
+.price,.weight,.number{
+	border-top:solid 1px #e0e0e0;
+	padding: 10px 0px;
+}
+.numinput{
+	width: 3em;
+	border: solid 1px #e0e0e0;
+	text-align: center;
+	margin: 5px 20px;
+}
+.goodsInfo .product-btn{
+	margin-left: 0px;
+} 
+
+
+/* 当浏览器的可视区域大于980px */
+@media screen and (min-width: 980px) {
+ 
+.main,.banner{
+	width: 1160px;
+	overflow: hidden;
+}
+.banner{
+	height: 395px;
+	position: relative;
+	overflow: hidden;
+}
+
+}
+
+/* 当浏览器的可视区域小于980px */
+@media screen and (max-width: 980px) {
+    .main,.banner{
+	width: 900px;
+	overflow: hidden;
+}
+.banner{
+	height: 306px;
+	position: relative;
+	overflow: hidden;
+}
+img {
+
+width: auto; 
+max-width:100%;　　
+
+
+　　height： auto;
+
+　　width： auto9; /* ie8 */
+
+　　}
+
+.product-area{
+	width: 640px;
+	
+}
+.product-area ul li{
+	
+	margin:20px 35px 0px 0px;
+}
+
+}
+
+
+
+
+/* 当浏览器的可视区域小于650px */
+@media screen and (max-width: 650px) {
+
+     .main,.banner{
+	width: 600px;
+	overflow: hidden;
+}
+.banner{
+	height: 200px;
+	position: relative;
+	overflow: hidden;
+}
+.banner div a{
+	
+	height: 30px;
+	margin-right: 1px;
+	overflow: hidden;
+	padding: 5px 15px;
+	text-align: center;
+	width: 79px;
+}
+.product-area{
+	width: 396px;	
+}
+.product-info .name{
+	height: 40px;
+}
+
+.product-area ul li{
+	float: left;
+	background-color: #ffffff;
+	width: 178px;
+	margin:20px 20px 0px 0px;
+}
+
+.product-photo,.product-info,.product-btn{
+	width: 158px;
+	margin: 10px;
+	overflow: hidden;
+	
+}
+
+.product-photo {
+	height:158px;
+
+}
+.product-btn a{
+	
+	width: 158px;
+	
+	}
+	.ickbuy-ad-news{
+	width: 200px;
+	float: right;
+
+}
+.ickbuy-ad{
+	height: 200px;
+	
+}
+
+}
